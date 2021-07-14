@@ -7,6 +7,9 @@ from scipy.signal import freqz, cheb1ord, cheby1
 from .eis_models import thermal_noise
 
 
+__all__ = ['simulate_thermal_noise', 'long_noise_series']
+
+
 def _check_bandpass(bandpass):
     if not bandpass:
         return list()
